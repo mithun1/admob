@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>admob test</title>
+</head>
+<body>
+<h1>Test admob plugin</h1>
+<script>
+ function onDeviceReady() {
+      document.removeEventListener('deviceready', onDeviceReady, false);
+      
+      // Set AdMobAds options:
+      admob.setOptions({
+        publisherId:          "pub-1458752546991864",  // Required
+        interstitialAdId:     "ca-app-pub-1458752546991864/2018731591",  // Optional
+        tappxIdiOS:           "/XXXXXXXXX/Pub-XXXX-iOS-IIII",            // Optional
+        tappxIdAndroid:       "/XXXXXXXXX/Pub-XXXX-Android-AAAA",        // Optional
+        tappxShare:           0.5                                        // Optional
+      });
+      
+      // Start showing banners (atomatic when autoShowBanner is set to true)
+      admob.createBannerView();
+      
+      // Request interstitial (will present automatically when autoShowInterstitial is set to true)
+      admob.requestInterstitialAd();
+    }
+    
+    document.addEventListener("deviceready", onDeviceReady, false);
+</script>
+</body>
+</html>

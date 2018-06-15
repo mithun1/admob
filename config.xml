@@ -20,10 +20,10 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         id        = "com.webapsolution.admob"
         version   = "1.0.0">
-    <name>FlowerKnowledge</name>
+    <name>AdMobTest</name>
 
     <description>
-       Flower Knowledge Test.
+     Admob test
     </description>
 
     <author href="http://cordova.io" email="dev@cordova.apache.org">
